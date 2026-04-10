@@ -160,14 +160,15 @@ python src/svm_pipeline.py --kernel rbf --c 3.0 --gamma scale
 
 ```
 transport-ml-rd/
-鈹?鈹溾攢鈹€ data/
-鈹溾攢鈹€ reports/
-鈹?  鈹溾攢鈹€ tables/
-鈹?  鈹斺攢鈹€ figures/
-鈹溾攢鈹€ src/
-鈹溾攢鈹€ main.py
-鈹溾攢鈹€ requirements.txt
-鈹斺攢鈹€ README.md
+│
+├── data/
+├── reports/
+│   ├── tables/
+│   └── figures/
+├── src/
+├── main.py
+├── requirements.txt
+└── README.md
 ```
 
 ---
