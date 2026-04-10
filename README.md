@@ -4,15 +4,15 @@ Machine Learning aplicado al dominio del transporte utilizando Support Vector Ma
 
 ---
 
-## 馃嚜馃嚫 Descripci贸n
+## 📌 Descripción
 
-Este repositorio contiene la implementaci贸n de un algoritmo de clasificaci贸n basado en **M谩quinas de Vectores de Soporte (SVM)**, desarrollado como parte de la asignatura **Algoritmos de Clasificaci贸n en Machine Learning**.
+Este repositorio contiene la implementación de un algoritmo de clasificación basado en **Máquinas de Vectores de Soporte (SVM)**, desarrollado como parte de la asignatura **Algoritmos de Clasificación en Machine Learning**.
 
-El proyecto aborda un caso representativo del sector transporte, donde se busca clasificar niveles de riesgo a partir de datos estructurados. La implementaci贸n incluye un pipeline completo de aprendizaje autom谩tico, abarcando desde el preprocesamiento hasta la evaluaci贸n del modelo.
+El proyecto aborda un caso representativo del sector transporte, donde se busca clasificar niveles de riesgo a partir de datos estructurados. La implementación incluye un pipeline completo de aprendizaje automático, abarcando desde el preprocesamiento hasta la evaluación del modelo.
 
 ---
 
-## 馃幆 Objetivos
+## 🎯 Objetivos
 
 - Implementar un modelo de clasificaci贸n supervisada utilizando SVM  
 - Aplicar t茅cnicas de preprocesamiento sobre datos estructurados  
@@ -22,7 +22,7 @@ El proyecto aborda un caso representativo del sector transporte, donde se busca 
 
 ---
 
-## 馃 Algoritmo
+## 🧠 Algoritmo
 
 El modelo utilizado es:
 
@@ -42,7 +42,7 @@ SVM se selecciona por:
 
 ---
 
-## 馃搳 Dataset
+## 📊 Dataset
 
 El conjunto de datos representa un escenario del dominio del transporte e incluye variables como:
 
@@ -57,7 +57,7 @@ La variable objetivo corresponde a una **clasificaci贸n binaria de riesgo**.
 
 ---
 
-## 鈿欙笍 Pipeline
+## ⚙️ Pipeline
 
 El flujo de trabajo implementado es:
 
@@ -72,7 +72,7 @@ El flujo de trabajo implementado es:
 
 ---
 
-## 馃搱 M茅tricas de Evaluaci贸n
+## 📈 Métricas de Evaluación
 
 El modelo se eval煤a utilizando:
 
@@ -90,7 +90,7 @@ Los resultados se almacenan en:
 
 ---
 
-## 馃И Resultados
+## 🧪 Resultados
 
 El pipeline genera autom谩ticamente:
 
@@ -103,7 +103,7 @@ El pipeline genera autom谩ticamente:
 
 ---
 
-## 鈿狅笍 An谩lisis
+## ⚠️ Anólisis
 
 Se abordan los siguientes aspectos:
 
@@ -118,7 +118,7 @@ Evaluaci贸n basada en el tiempo de entrenamiento e inferencia.
 
 ---
 
-## 馃尡 Trabajo Futuro (Pr谩ctica 3 - Green AI)
+## 🌱 Trabajo Futuro (Pr谩ctica 3 - Green AI)
 
 El proyecto est谩 preparado para extenderse mediante:
 
@@ -132,7 +132,7 @@ El proyecto est谩 preparado para extenderse mediante:
 
 ---
 
-## 馃洜锔?Instalaci贸n
+## 🛠️ Instalación
 
 ```bash
 git clone https://github.com/your-username/transport-ml-rd.git
@@ -142,7 +142,7 @@ pip install -r requirements.txt
 
 ---
 
-## 鈻讹笍 Ejecuci贸n
+## ▶️ Ejecución
 
 ```bash
 python main.py
@@ -156,7 +156,7 @@ python src/svm_pipeline.py --kernel rbf --c 3.0 --gamma scale
 
 ---
 
-## 馃搧 Estructura del Proyecto
+## 📁 Estructura del Proyecto
 
 ```
 transport-ml-rd/
@@ -172,7 +172,7 @@ transport-ml-rd/
 
 ---
 
-## 馃摎 Referencias
+## 📚 Referencias
 
 - Cortes, C., & Vapnik, V. (1995). Support-vector networks.  
 - Bishop, C. M. (2006). Pattern Recognition and Machine Learning.  
@@ -180,9 +180,9 @@ transport-ml-rd/
 
 ---
 
-## 馃懁 Autor
+## 👤 Autor
 
-**Edwin Jos茅 Nolasco**
+**Edwin Josó Nolasco**
 
 ---
 
