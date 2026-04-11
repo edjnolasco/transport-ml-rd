@@ -14,9 +14,9 @@ El proyecto aborda un caso representativo del sector transporte, donde se busca 
 
 ## 🎯 Objetivos
 
-- Implementar un modelo de clasificaci贸n supervisada utilizando SVM  
-- Aplicar t茅cnicas de preprocesamiento sobre datos estructurados  
-- Evaluar el modelo mediante m茅tricas est谩ndar  
+- Implementar un modelo de clasificación supervisada utilizando SVM  
+- Aplicar técnicas de preprocesamiento sobre datos estructurados  
+- Evaluar el modelo mediante métricas estándar  
 - Analizar aspectos como sobreajuste, interpretabilidad y coste computacional  
 - Preparar la base para optimizaci贸n posterior (enfoque Green AI)  
 
@@ -28,16 +28,16 @@ El modelo utilizado es:
 
 **Support Vector Machine (SVM)**
 
-Configuraci贸n principal:
+Configuración principal:
 
 - Kernel: RBF (Radial Basis Function)  
-- Par谩metro de regularizaci贸n: C  
-- Par谩metro del kernel: gamma  
+- Parámetro de regularización: C  
+- Parámetro del kernel: gamma  
 
 SVM se selecciona por:
 
-- Su capacidad de maximizar el margen de separaci贸n entre clases  
-- Su solidez te贸rica en problemas de clasificaci贸n  
+- Su capacidad de maximizar el margen de separación entre clases  
+- Su solidez teórica en problemas de clasificación  
 - Su capacidad de modelar relaciones no lineales mediante funciones kernel  
 
 ---
@@ -48,12 +48,12 @@ El conjunto de datos representa un escenario del dominio del transporte e incluy
 
 - Variables temporales (hora, d铆a)  
 - Condiciones ambientales  
-- Caracter铆sticas de la v铆a  
-- Informaci贸n relacionada con veh铆culos  
+- Características de la vía  
+- Información relacionada con vehículos  
 
-La variable objetivo corresponde a una **clasificaci贸n binaria de riesgo**.
+La variable objetivo corresponde a una **clasificación binaria de riesgo**.
 
-> Nota: El dataset se utiliza con fines acad茅micos.
+> Nota: El dataset se utiliza con fines académicos.
 
 ---
 
@@ -63,18 +63,18 @@ El flujo de trabajo implementado es:
 
 1. Carga de datos  
 2. Preprocesamiento:
-   - Imputaci贸n de valores faltantes  
-   - Codificaci贸n de variables categ贸ricas (One-Hot Encoding)  
+   - Imputación de valores faltantes  
+   - Codificación de variables categóricas (One-Hot Encoding)  
    - Escalado de variables (StandardScaler)  
-3. Divisi贸n en entrenamiento y prueba  
+3. División en entrenamiento y prueba  
 4. Entrenamiento del modelo (SVM)  
-5. Evaluaci贸n del modelo  
+5. Evaluación del modelo  
 
 ---
 
 ## 📈 Métricas de Evaluación
 
-El modelo se eval煤a utilizando:
+El modelo se evalúa utilizando:
 
 - Accuracy  
 - Precision  
@@ -92,9 +92,9 @@ Los resultados se almacenan en:
 
 ## 🧪 Resultados
 
-El pipeline genera autom谩ticamente:
+El pipeline genera automáticamente:
 
-- M茅tricas de entrenamiento y prueba  
+- Métricas de entrenamiento y prueba  
 - Reportes de clasificaci贸n  
 - Matriz de confusi贸n  
 - Curva ROC  
@@ -103,32 +103,32 @@ El pipeline genera autom谩ticamente:
 
 ---
 
-## ⚠️ Anólisis
+## ⚠️ Análisis
 
 Se abordan los siguientes aspectos:
 
 ### Sobreajuste
-Comparaci贸n entre m茅tricas de entrenamiento y prueba.
+Comparación entre métricas de entrenamiento y prueba.
 
 ### Interpretabilidad
-Limitaciones de SVM en la explicaci贸n directa de predicciones.
+Limitaciones de SVM en la explicación directa de predicciones.
 
 ### Coste Computacional
-Evaluaci贸n basada en el tiempo de entrenamiento e inferencia.
+Evaluación basada en el tiempo de entrenamiento e inferencia.
 
 ---
 
-## 🌱 Trabajo Futuro (Pr谩ctica 3 - Green AI)
+## 🌱 Trabajo Futuro (Práctica 3 - Green AI)
 
-El proyecto est谩 preparado para extenderse mediante:
+El proyecto está preparado para extenderse mediante:
 
-- Variaci贸n del tama帽o del dataset  
-- Reducci贸n del n煤mero de variables  
-- Medici贸n del tiempo de entrenamiento  
-- Aplicaci贸n de t茅cnicas como:
-  - Selecci贸n de variables  
-  - Reducci贸n de dimensionalidad  
-  - Optimizaci贸n de hiperpar谩metros  
+- Variación del tamaño del dataset  
+- Reducción del número de variables  
+- Medición del tiempo de entrenamiento  
+- Aplicación de técnicas como:
+  - Selección de variables  
+  - Reducción de dimensionalidad  
+  - Optimización de hiperparámetros  
 
 ---
 
@@ -148,7 +148,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-O con par谩metros:
+O con parámetros:
 
 ```bash
 python src/svm_pipeline.py --kernel rbf --c 3.0 --gamma scale
@@ -161,14 +161,21 @@ python src/svm_pipeline.py --kernel rbf --c 3.0 --gamma scale
 ```
 transport-ml-rd/
 │
+├── .github/
 ├── data/
+├── notebooks/
 ├── reports/
 │   ├── tables/
 │   └── figures/
 ├── src/
+├── tests/
+├── .gitignore
+├── LICENSE
+├── README.md
 ├── main.py
+├── pyproject.toml
 ├── requirements.txt
-└── README.md
+└── ruff.toml
 ```
 
 ---
@@ -177,17 +184,23 @@ transport-ml-rd/
 
 - Cortes, C., & Vapnik, V. (1995). Support-vector networks.  
 - Bishop, C. M. (2006). Pattern Recognition and Machine Learning.  
-- Scikit-learn documentation: https://scikit-learn.org/  
+- Scikit-learn documentation: https://scikit-learn.org/
+- Awad, M., & Khanna, R. (2015). Support vector machines for classification. In Efficient learning machines (pp. 39–66). Apress. https://doi.org/10.1007/978-1-4302-5990-9_3
+- Cervantes, J., García-Lamont, F., Rodríguez-Mazahua, L., & López, A. (2020). A comprehensive survey on support vector machine classification: Applications, challenges and trends. Neurocomputing, 408, 189–215. https://doi.org/10.1016/j.neucom.2019.10.118
+- Guido, R. (2024). An overview on the advancements of support vector machines in medical applications. Information, 15(4), 235. https://doi.org/10.3390/info15040235
+- Khyathi, G., Prasad, K., & Reddy, K. (2025). Support vector machines: A literature review on their application in analyzing mass data for public health. Cureus, 17(1), e77169. https://doi.org/10.7759/cureus.77169 
+- Schwartz, R., Dodge, J., Smith, N. A., & Etzioni, O. (2020). Green AI. Communications of the ACM, 63(12), 54–63. https://doi.org/10.1145/3381831
+- Tang, W. (2024). Application of support vector machine system introducing cluster-based kernel methods. Machine Learning with Applications, 15, 100525. https://doi.org/10.1016/j.mlwa.2024.100525 
 
 ---
 
 ## 👤 Autor
 
-**Edwin Josó Nolasco**
+**Edwin José Nolasco**
 
 ---
 
-## 馃嚭馃嚫 English Version
+## English Version
 
 ### Description
 
