@@ -54,7 +54,7 @@ Extensión del análisis hacia eficiencia computacional:
 - Frontera de Pareto
 - Detección automática del mejor modelo
 
-👉 Ejecutar en Colab:
+👉 Ejecutar en Colab: 
   <a href="https://colab.research.google.com/drive/10HzFFKE5SaaDlZucutHQlsPgQC9svrVL?usp=sharing" target="_blank">
     <img src="https://colab.research.google.com/assets/colab-badge.svg" 
          alt="Open In Colab"/>
