@@ -3,7 +3,7 @@
 ![CI](https://github.com/edjnolasco/transport-ml-rd/actions/workflows/ci.yaml/badge.svg)
 ![Lint](https://img.shields.io/badge/lint-ruff-blue)
 ![Tests](https://img.shields.io/badge/tests-xUnit%20%7C%20pytest-success)
-![Coverage](https://img.shields.io/badge/coverage-%3E%3D80%25-brightgreen)
+![Coverage](https://raw.githubusercontent.com/edjnolasco/transport-ml-rd/main/coverage.svg)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Green AI](https://img.shields.io/badge/Green%20AI-Enabled-brightgreen)
 ![Colab](https://img.shields.io/badge/Colab-Notebook-orange)
