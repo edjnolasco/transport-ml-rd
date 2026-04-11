@@ -1,6 +1,6 @@
 # transport-ml-rd
 
-![CI](https://github.com/edjnolasco/transport-ml-rd/actions/workflows/ci.yaml/badge.svg)
+[![CI](https://github.com/edjnolasco/transport-ml-rd/actions/workflows/ci.yml/badge.svg)](https://github.com/edjnolasco/transport-ml-rd/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Machine Learning](https://img.shields.io/badge/ML-Classification-green)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Modeling-orange)
