@@ -38,7 +38,10 @@ Implementación inicial del pipeline de clasificación utilizando Support Vector
 - Evaluación con métricas clásicas
 
 👉 Ejecutar en Colab:  
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1B7VpNbauanYhPmDhzr2czOEsFJiGkhmc?usp=sharing)
+<a href="https://colab.research.google.com/drive/1B7VpNbauanYhPmDhzr2czOEsFJiGkhmc?usp=sharing" target="_blank">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" 
+       alt="Open In Colab"/>
+</a>
 
 ---
 
@@ -51,8 +54,11 @@ Extensión del análisis hacia eficiencia computacional:
 - Frontera de Pareto
 - Detección automática del mejor modelo
 
-👉 Ejecutar en Colab:  
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/10HzFFKE5SaaDlZucutHQlsPgQC9svrVL?usp=sharing)
+👉 Ejecutar en Colab:
+<a href="https://colab.research.google.com/drive/10HzFFKE5SaaDlZucutHQlsPgQC9svrVL?usp=sharing" target="_blank">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" 
+       alt="Open In Colab"/>
+</a>
 
 ## 🎯 Objetivos
 
