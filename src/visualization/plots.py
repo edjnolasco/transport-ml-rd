@@ -19,6 +19,11 @@ import json
 from pathlib import Path
 from typing import Any
 
+import matplotlib
+
+# Backend seguro para entornos sin interfaz gráfica (CI, servidores, tests).
+matplotlib.use("Agg")
+
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.lines import Line2D
@@ -181,7 +186,7 @@ def save_scatter_plot_paper_v2(
     dict[str, str | dict[str, Any] | None]
         Diccionario con rutas de exportación y datos del mejor modelo.
     """
-    # Limpieza global para evitar overlays y artefactos visuales en notebooks.
+    # Limpieza global para evitar overlays y artefactos visuales.
     plt.close("all")
 
     required_cols = [x_col, y_col, model_col, strategy_col]
@@ -233,7 +238,6 @@ def save_scatter_plot_paper_v2(
         for i, strategy in enumerate(strategies)
     }
 
-    # Scatter principal.
     for _, row in plot_df.iterrows():
         ax.scatter(
             row[x_col],
@@ -247,7 +251,6 @@ def save_scatter_plot_paper_v2(
             zorder=2,
         )
 
-    # Frontera de Pareto.
     if show_pareto and not pareto_df.empty:
         ax.plot(
             pareto_df[x_col],
@@ -270,7 +273,6 @@ def save_scatter_plot_paper_v2(
                 zorder=4,
             )
 
-    # Etiquetas.
     texts: list[Any] = []
 
     if pareto_label_col is not None and not pareto_df.empty:
@@ -284,7 +286,6 @@ def save_scatter_plot_paper_v2(
             )
             texts.append(label_artist)
 
-    # Mejor modelo global.
     best_row: pd.Series | None = None
 
     if highlight_best:
@@ -315,7 +316,6 @@ def save_scatter_plot_paper_v2(
         )
         texts.append(best_artist)
 
-    # Ajuste automático de etiquetas.
     if use_adjust_text and texts:
         try:
             from adjustText import adjust_text
@@ -328,13 +328,11 @@ def save_scatter_plot_paper_v2(
         except Exception:
             pass
 
-    # Estilo general.
     ax.set_title(title)
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
     ax.grid(True, alpha=0.3)
 
-    # Leyendas.
     model_handles = [
         Line2D(
             [0],
@@ -398,21 +396,19 @@ def save_scatter_plot_paper_v2(
         )
         ax.add_artist(legend_best)
 
-    plt.tight_layout()
+    fig.tight_layout()
 
-    # Exportación.
     if export_png and png_path is not None:
-        plt.savefig(png_path, dpi=300, bbox_inches="tight")
+        fig.savefig(png_path, dpi=300, bbox_inches="tight")
 
     if export_pdf and pdf_path is not None:
-        plt.savefig(pdf_path, bbox_inches="tight")
+        fig.savefig(pdf_path, bbox_inches="tight")
 
     if export_svg and svg_path is not None:
-        plt.savefig(svg_path, bbox_inches="tight")
+        fig.savefig(svg_path, bbox_inches="tight")
 
-    plt.close()
+    plt.close(fig)
 
-    # Metadata.
     if export_metadata and metadata_path is not None:
         metadata = {
             "filename": filename_base,
